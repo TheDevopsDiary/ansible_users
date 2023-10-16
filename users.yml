@@ -1,0 +1,5 @@
+users: 
+  - {user: toby1, comment: Toby , uid: 2001 , state: present}
+  - {user: toby2, comment: Toby 2, uid: 2002, state: present}
+  - {user: toby3, comment: Toby 3, uid: 2003, state: present}
+  - {user: johnd, comment: Johnd, uid: 1040, state: absent }
