@@ -1,0 +1,14 @@
+---
+- hosts: all
+  vars_files:
+    - users.yml
+
+  tasks: 
+  - name: Create a user
+    user:
+      name: "{{item.user}}"
+      comment: "{{item.comment}}"
+      uid: "{{item.uid}}"
+      state: "{{item.state}}"
+      remove: true
+    with_items: "{{ users }}"
